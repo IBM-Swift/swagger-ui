@@ -1,5 +1,22 @@
 # Swagger UI
 
+## Kitura changes
+The following changes have been made for inclusion in the Kitura-OpenAPI package:
+
+- src/style/_variables.scss: Change value for color-primary to #00bbe6.
+- src/style/_variables.scss: Change value for topbar-download-url-wrapper-element-border-color to #02728b.
+- src/style/_variables.scss: Change value for topbar-download-url-button-background-color to #02728b.
+- src/plugins/topbar/logo_small.png: Kitura specific icon.
+- src/plugins/topbar/topbar.jsx: Link icon in topbar to kitura.io.
+- src/img/logo_small.png: Kitura specific icon.
+- dist/favicon-16x16.png: Kitura specific icon.
+- dist/favicon-32x32.png: Kitura specific icon.
+- dist/index.stencil: Add Stencil template for index.html.
+- dist/index.html: Removed.
+
+To build for Kitura: npm run build
+This will build into the dist directory. Take the contents of dist and copy that into Kitura-OpenAPI and then commit Kitura-OpenAPI back to git.
+
 [![NPM version](https://badge.fury.io/js/swagger-ui.svg)](http://badge.fury.io/js/swagger-ui)
 
 **👉🏼 Want to score an easy open-source contribution?** Check out our [Good first issue](https://github.com/swagger-api/swagger-ui/issues?q=is%3Aissue+is%3Aopen+label%3A%22Good+first+issue%22) label.
@@ -20,7 +37,7 @@ The OpenAPI Specification has undergone 5 revisions since initial creation in 20
 
 Swagger UI Version | Release Date | OpenAPI Spec compatibility | Notes
 ------------------ | ------------ | -------------------------- | -----
-3.17.1 | 2018-06-16 | 2.0, 3.0 | [tag v3.17.1](https://github.com/swagger-api/swagger-ui/tree/v3.17.1)
+3.17.0 | 2018-05-26 | 2.0, 3.0 | [tag v3.17.0](https://github.com/swagger-api/swagger-ui/tree/v3.17.0)
 3.0.21 | 2017-07-26 | 2.0 | [tag v3.0.21](https://github.com/swagger-api/swagger-ui/tree/v3.0.21)
 2.2.10 | 2017-01-04 | 1.1, 1.2, 2.0 | [tag v2.2.10](https://github.com/swagger-api/swagger-ui/tree/v2.2.10)
 2.1.5 | 2016-07-20 | 1.1, 1.2, 2.0 | [tag v2.1.5](https://github.com/swagger-api/swagger-ui/tree/v2.1.5)
